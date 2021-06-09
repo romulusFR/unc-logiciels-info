@@ -27,7 +27,7 @@ Voir la liste sur OneDrive :
   + Tomcat 8
   + Python 3 (avec pip), voir [sous-dossier](python/README.md)
     * Jinja et autres modules pip : vérifier l'installation pip
-  + Docker
+  + Docker, voir [sous-dossier](docker/README.md)
   + Wampserver
   + PostgreSQL, voir [sous-dossier](postresql/README.md)
     * CLI psql
@@ -43,8 +43,6 @@ Voir la liste sur OneDrive :
   + Putty
 - Autre
   + un répertoire partagé en écriture pour l’ enseignant  et en lecture seule pour les étudiants afin que ces derniers puissent récupérer des images ISO utilisé en TP pour déployer en autonomie des systèmes
-
-
 
 Problème des montages réseau
 ----------------------------
