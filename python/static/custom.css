@@ -1,0 +1,10 @@
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.columns {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+}

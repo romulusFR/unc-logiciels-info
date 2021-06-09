@@ -1,0 +1,26 @@
+{% extends "layout.html.jinja" %}
+
+{% block main %}
+<section>
+  <h1 class="title">Votez pour votre citation favorite !</h1>
+
+  <div class="columns">
+    <div class="column" data-target="0">
+      <figure>
+        <img src="{{ citations[0]['image'] }}" alt="Illustration du premier personnage">
+      </figure>
+      <p>
+        <em>{{ citations[0]['quote'] }}</em>
+      </p>
+    </div>
+    <div class="column" data-target="1">
+      <figure>
+        <img src="{{ citations[1]['image'] }}" alt="Illustration du second personnage">
+      </figure>
+      <p>
+        <em>{{ citations[1]['quote'] }}</em>
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application de départ S3-Projet</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+  </head>
+  <body>
+
+    {% block main %}
+    {% endblock %}
+
+  </body>
+  <script src="{{ url_for('static', filename='app.js') }}" charset="utf-8"></script>
+</html>
