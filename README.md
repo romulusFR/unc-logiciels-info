@@ -11,52 +11,66 @@ Liste des logiciels
 Voir la liste sur OneDrive :
 
 - Utilitaires
-  + Java
-  + Notepad++
+  + Java JRE : OK sur MASTER 
+  + Notepad++ : OK sur MASTER 
 - Navigateurs
-  + Firefox
-  + Chrome
-  + Opera
+  + Firefox : OK sur MASTER 
+  + Chrome : OK sur MASTER 
+  + Opera : PAS TESTÉ
 - Outils Mathématiques
-  + Mathematica (F)
-  + Matlab (F)
-  + SCILAB
+  + Mathematica (F) : PAS TESTÉ
+  + Matlab (F) : PAS TESTÉ
+  + SCILAB : PAS TESTÉ
 - Informatique
-  + Packet Tracer
-  + IntelliJ
-  + Tomcat 8
-  + Python 3 (avec pip), voir [sous-dossier](python/README.md)
-    * Jinja et autres modules pip : vérifier l'installation pip
+  + Packet Tracer : PAS TESTÉ
+  + Java
+    * IntelliJ CE : OK sur MASTER
+    * Tomcat ~~8~~ 10 : OK sur MASTER, dans `C:\apache-tomcat-10.0.6` à lancer à la main (pas en mode service)
+    * SDK Oracle 16.0.1 : OK sur MASTER, `JAVA_HOME` défini
+    * Maven : PAS TESTÉ, configurer le cache Nexus
+  + Python 3, voir [sous-dossier](python/README.md)
+    * pip : OK sur MASTER
+    * Jinja et autres modules : OK sur MASTER
   + Docker, voir [sous-dossier](docker/README.md)
-  + Wampserver
+    * KO, pas possible d'activer Hyper-V dans VM
+    * Voir dans l'image Linux et l'intérêt ?
+  + Wampserver : PAS TESTÉ
   + PostgreSQL, voir [sous-dossier](postresql/README.md)
-    * CLI psql
-    * PgAdmin
-  + VSCode
-  + git
-  + GitHub Desktop
+    * Dossier `data` : OK sur MASTER
+    * CLI psql : OK sur MASTER
+    * PgAdmin : OK sur MASTER
+  + VSCode : OK sur MASTER
+  + Git/Github
+    * git : OK sur MASTER
+    * GitHub Desktop : : OK sur MASTER, install local portable uniquement (dans `C:\install`)
   + WSL2 avec dernière version Ubuntu LTS (pour avoir notamment le compilateur C gcc)
+    * KO, remplacé par une nouvelle image `InfoLinux` Ubuntu 20.04 
   + NodeJS, voir [sous-dossier](node/README.md)
-  + Koala
-  + Wireshark
-  + VirtualBox + extensions pack
-  + Putty
+    * node : OK sur MASTER
+    * npm : OK sur MASTER, configurer le cache Nexus
+  + Koala : PAS TESTÉ
+  + Wireshark : OK sur MASTER
+    * npcap 1.31 installé sans droits admin
+  + VirtualBox + extensions pack : PAS TESTÉ, voir l'intérêt ?
+  + Putty : PAS TESTÉ
 - Autre
   + un répertoire partagé en écriture pour l’ enseignant  et en lecture seule pour les étudiants afin que ces derniers puissent récupérer des images ISO utilisé en TP pour déployer en autonomie des systèmes
 
 Problème des montages réseau
 ----------------------------
 
-Il y a un élément dysfonctionnel **majeur** dans la configuration du master, la co-existence de deux chemins différents pour le repertoire utilisateur :
+Co-existence de deux chemins différents pour le repertoire utilisateur :
 
 - `C:\Users\rthion`
 - `\\sokar.unc.prod\lecteurpersonnel-staff\rthion`
 
-Ceci a pour effet que **toutes les modifications** faites en local dans l'espace utilisateur (e.g., les extensions VScode, les modules `npm` ou `pip`) **DISPARAISSENT APRES LOGOUT**
+Ceci a pour effet que **toutes les modifications** faites en local dans l'espace utilisateur (e.g., les extensions VScode, les modules `npm` ou `pip`) disparaissent. Pour éviter cela il faut **configurer Horizon pour qu'il maintiennent les configurations dans `%UserProfile%`.
 
-De plus, une partie des logiciels **refuse** de s'exécuter sur le dosier partagé
+**Fait sur le Master pour les logiciels identifiés**
 
 ### Impossible de créer des programmes Node.js sur le dossier personnel réseau
+
+**TODO** : une partie des logiciels **refuse** de s'exécuter sur le dosier partagé.
 
 Impossible d'utiliser `npm install` sur le disque réseau.
 
