@@ -1,8 +1,8 @@
 Test installation Postgresql
 ============================
 
-Notes d'installation
---------------------
+Installation
+------------
 
 Autoriser l'utilisateur `postgres` en mode `trust` en modifiant le fichier, `pg_hba.conf`, cf <https://stackoverflow.com/questions/27107557/what-is-the-default-password-for-postgres>
 

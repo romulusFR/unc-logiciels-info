@@ -2,13 +2,15 @@ Procédures de tests des logiciels INFO UNC
 ==========================================
 
 Ce projet rassemble les tests à effectuer sur les installations des logiciels demandés par la licence INFO à l'UNC pour en faire la recette.
+Complète la liste de la DNSI qui maintient les version installées <https://confluence.unc.nc/display/DI/2021+-+Applications+machines+Horizon>.
 
 Chaque environnement de développement a un sous-dossier où la procédure de test est décrite dans le fichier `README.md`. Le cas échéant, les fichiers necessaires aux tests sont dans le sous-dossier (e.g., programme minimal Python dont on doit réussir l'exécution).
 
 Liste des logiciels
 -------------------
 
-Voir la liste et l'onglet "Recette" sur le OneDrive (accès restreint, demander par email)
+Voir la liste et l'onglet "Recette" sur le OneDrive (accès restreint, demander par email).
+Pour les détails des configuration et tests effectués :
 
 - Java, Tomcat, Maven voir [sous-dossier](java/README.md)
 - Docker, voir [sous-dossier](docker/README.md)

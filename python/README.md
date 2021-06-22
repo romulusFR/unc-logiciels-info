@@ -7,6 +7,9 @@ Installation
 - ajout du `PATH`
   + pip config -v list
 - chemin de pip
+  + dont `C:\Users\rthion\AppData\Roaming\pip\pip.ini`
+
+**TODO** mettre le fichier `.ini` par défaut pour utiliser le dépôt <http://nexus.unc.nc/>.
 
 
 Versions
@@ -25,6 +28,11 @@ py -m pip --version
 # màj de pip dans l'espace utilisateur
 py -m pip install --upgrade pip
 # Successfully installed pip-21.1.2
+
+py -m pip cache dir
+# c:\users\rthion\appdata\local\pip\cache
+
+py -m pip install python-slugify -g
 ```
 
 Application de test
