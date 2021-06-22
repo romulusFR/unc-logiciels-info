@@ -4,6 +4,8 @@ Test installation node
 Installation
 ------------
 
+Copier le fichier `.npmrc` à sa place.
+
 Préciser le `NODE_PATH` :
 
 ```shell
