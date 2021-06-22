@@ -19,7 +19,6 @@ py -m pip install --upgrade pip
 # Successfully installed pip-21.1.2
 ```
 
-
 Application de test
 -------------------
 
