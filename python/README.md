@@ -1,6 +1,14 @@
 Test installation python
 ========================
 
+Installation
+------------
+
+- ajout du `PATH`
+  + pip config -v list
+- chemin de pip
+
+
 Versions
 --------
 
