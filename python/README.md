@@ -11,7 +11,6 @@ Installation
 
 **TODO** mettre le fichier `.ini` par défaut pour utiliser le dépôt <http://nexus.unc.nc/>.
 
-
 Versions
 --------
 
@@ -33,6 +32,8 @@ py -m pip cache dir
 # c:\users\rthion\appdata\local\pip\cache
 
 py -m pip install python-slugify -g
+
+py -c "import slugify; s = slugify.slugify('Un, test cet été ?'); print(s)"
 ```
 
 Application de test
