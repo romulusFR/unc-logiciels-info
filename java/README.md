@@ -37,3 +37,4 @@ Pour le test d'une application `war` :
 
 - Copier le fichier <https://tomcat.apache.org/tomcat-9.0-doc/appdev/sample/sample.war> dans `%CATALINA_HOME%\WepApps`
 - Visiter <http://localhost:8080/sample>
+
