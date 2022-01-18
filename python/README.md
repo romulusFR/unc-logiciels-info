@@ -5,11 +5,13 @@ Installation
 ------------
 
 - ajout du `PATH`
-  + pip config -v list
+  - pip config -v list
 - chemin de pip
-  + dont `C:\Users\rthion\AppData\Roaming\pip\pip.ini`
+  - dont `C:\Users\rthion\AppData\Roaming\pip\pip.ini`
 
 **TODO** mettre le fichier `.ini` par défaut pour utiliser le dépôt <http://nexus.unc.nc/>.
+
+Dans toute la suite, on désigne par `py` l'exécutable de l'interpréteur Python.
 
 Versions
 --------
@@ -31,10 +33,15 @@ py -m pip install --upgrade pip
 py -m pip cache dir
 # c:\users\rthion\appdata\local\pip\cache
 
-py -m pip install python-slugify -g
+py -m pip install python-slugify
 
 py -c "import slugify; s = slugify.slugify('Un, test cet été ?'); print(s)"
 ```
+
+Modules à installer
+-------------------
+
+Voir dans le fichier `requirements.txt`, puis `py -m pip install -r requirements.txt` [syntaxe du fichier](https://pip.pypa.io/en/stable/reference/requirements-file-format/#requirements-file-format).
 
 Application de test
 -------------------

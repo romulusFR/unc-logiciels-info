@@ -1,2 +1,42 @@
+# tooling
+pytest
+pytest-cache
+pylint
+black
+mypy
+python-dotenv
+
+# vizu/images
+matplotlib
+Pillow
+seaborn
+Pygments
+scikit-image
+# bokeh
+# python3-opencv
+
+# data science
+pandas
+numpy
+scipy
+networkx
+sklearn
+
+# web
 requests
+beautifulsoup4
+requests_html
+jinja2
 Flask
+Django
+
+
+# bd
+psycopg2-binary
+psycopg[binary]
+asyncpg
+SQLAlchemy
+
+# iPython
+# jupyterlab
+# notebook
