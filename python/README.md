@@ -1,5 +1,7 @@
-Test installation python
+Test installation Python
 ========================
+
+**TODO** : à passer en 3.10
 
 Installation
 ------------

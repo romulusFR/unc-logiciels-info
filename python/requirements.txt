@@ -5,6 +5,7 @@ pylint
 black
 mypy
 python-dotenv
+howdoi
 
 # vizu/images
 matplotlib
@@ -16,6 +17,7 @@ scikit-image
 # python3-opencv
 
 # data science
+csvkit
 pandas
 numpy
 scipy
@@ -29,7 +31,6 @@ requests_html
 jinja2
 Flask
 Django
-
 
 # bd
 psycopg2-binary
