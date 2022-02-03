@@ -13,7 +13,9 @@ Pillow
 seaborn
 Pygments
 scikit-image
-# bokeh
+bokeh
+altair
+holoviews
 # python3-opencv
 
 # data science
@@ -23,11 +25,16 @@ numpy
 scipy
 networkx
 sklearn
+statsmodels
 
 # web
+certifi
 requests
 beautifulsoup4
 requests_html
+cchardet
+aiodns
+aiohttp[speedups]
 jinja2
 Flask
 Django
@@ -38,6 +45,7 @@ psycopg[binary]
 asyncpg
 SQLAlchemy
 
-# iPython
-# jupyterlab
-# notebook
+# notebooks
+iPython
+jupyterlab
+notebook
